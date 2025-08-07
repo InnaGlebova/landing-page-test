@@ -1,0 +1,131 @@
+/* Custom Select */
+.custom-select {
+    position: relative;
+    width: 100%;
+
+    &__header {
+        background-color: $white;
+        color: $dark;
+        border: 1px solid $gray;
+        border-radius: 5px;
+        padding: 12px 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+            border-color: $primary;
+        }
+    }
+
+    &__placeholder {
+        color: $dark;
+        font-size: 16px;
+    }
+
+    &__arrow {
+        color: $dark;
+        transition: transform 0.3s ease;
+        display: flex;
+        align-items: center;
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: $dark;
+        border: 1px solid #4a4a57;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+        max-height: 200px;
+        overflow-y: auto;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    &__option {
+        padding: 12px 16px;
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: left;
+
+        &:hover {
+            background-color: $primary;
+            color: $dark;
+        }
+    }
+
+    &.selected {
+        background-color: $primary;
+        color: $dark;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 3px;
+            height: 100%;
+            background-color: $white;
+        }
+    }
+
+
+    &.has-value {
+        .custom-select__header {
+            background-color: $white;
+            color: $dark;
+            border-color: $primary;
+        }
+
+        .custom-select__placeholder {
+            color: $dark;
+        }
+
+        .custom-select__arrow {
+            color: $dark;
+        }
+    }
+
+    &.active {
+        .custom-select__header {
+            background-color: $tertiary;
+            color: $white;
+            border-color: $primary;
+        }
+
+        .custom-select__placeholder {
+            color: $white;
+        }
+
+        .custom-select__arrow {
+            color: $white;
+            transform: rotate(180deg);
+        }
+
+        .custom-select__dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .custom-select {
+        &__placeholder {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,159 @@
+<section class="intro">
+  <div class="container">
+    <div class="intro__inner">
+      <div class="intro__content">
+        <h1 class="intro__title">
+          Lorem ipsum <span>dolor sit<br />amet consectetur</span> adipiscing
+        </h1>
+        <p class="intro__descr">
+          At vero eos et accusamus et iusto odio dignissimos ducimus!
+        </p>
+        <ul class="intro__features">
+          <li class="intro__feature">
+            <p class="intro__feature-text">Totam rem aperiam eaque ipsa</p>
+          </li>
+          <li class="intro__feature">
+            <p class="intro__feature-text">
+              Sit voluptatem accusantium doloremque laudantium
+            </p>
+          </li>
+          <li class="intro__feature">
+            <p class="intro__feature-text">
+              Sed ut perspiciatis, unde omnis iste natus error
+            </p>
+          </li>
+        </ul>
+        <div class="intro__btns">
+          <button
+            class="intro__btn primary-btn popup-btn"
+            data-path="popup-change"
+          >
+            Заказать
+          </button>
+          <a href="#" class="intro__btn white-btn">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="order">
+  <div class="container">
+    <div class="order__content">
+      <h2 class="order__title animation-item rotate-item">Оформление <span>заказа</span></h2>
+      <p class="order__description">
+        Перед заполнением формы ознакомьтесь с нашей схемой работы!
+      </p>
+      <div class="order__steps">
+          <div class="order__steps-item animation-item transform-item">
+            <div class="order__steps-icon">
+              <img src="assets/img/icons/steps/1.svg" alt="Поиск" />
+            </div>
+            <p class="order__steps-text">Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="order__steps-item animation-item transform-item">
+            <div class="order__steps-icon">
+              <img src="assets/img/icons/steps/2.svg" alt="Расчет" />
+            </div>
+            <p class="order__steps-text">Сonsecteturadipiscing elit</p>
+          </div>
+          <div class="order__steps-item animation-item transform-item">
+            <div class="order__steps-icon">
+              <img src="assets/img/icons/steps/3.svg" alt="Документы" />
+            </div>
+            <p class="order__steps-text">Sed do eiusmod tempor</p>
+          </div>
+          <div class="order__steps-item animation-item transform-item">
+            <div class="order__steps-icon">
+              <img src="assets/img/icons/steps/4.svg" alt="Связь" />
+            </div>
+            <p class="order__steps-text">Esse cillum dolore eu fugiat</p>
+          </div>
+          <div class="order__steps-item animation-item transform-item">
+            <div class="order__steps-icon">
+              <img src="assets/img/icons/steps/5.svg" alt="Безопасность" />
+            </div>
+            <p class="order__steps-text">
+              Excepteur sint occaecat cupidatat non proident
+            </p>
+          </div>
+      </div>
+
+      <form class="order__form animation-item scale-item">
+        <div class="order__form-inner">
+          <div class="order__form-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__header">
+                <span class="custom-select__placeholder"
+                  >Выберите тип системы</span
+                >
+                <div class="custom-select__arrow">
+                  <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path
+                      d="M1 1L6 6L11 1"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="custom-select__dropdown">
+                <div
+                  class="custom-select__option"
+                  data-value="sed-ut-perspiciatis"
+                >
+                  Sed ut perspiciatis
+                </div>
+                <div class="custom-select__option" data-value="nemo-enim-ipsam">
+                  Nemo enim ipsam
+                </div>
+                <div class="custom-select__option" data-value="et-harum-quidem">
+                  Et harum quidem
+                </div>
+                <div class="custom-select__option" data-value="temporibus-autem">
+                  Temporibus autem
+                </div>
+                <div
+                  class="custom-select__option"
+                  data-value="itaque-earum-rerum"
+                >
+                  Itaque earum rerum
+                </div>
+              </div>
+              <input
+                type="hidden"
+                name="system_type"
+                class="custom-select__input"
+              />
+            </div>
+            <input type="email" placeholder="Ваш e-mail" class="order__input" id="email" name="email" autocomplete="off"/>
+            <input type="text" placeholder="Ваше имя" class="order__input" id="name" name="name" autocomplete="off"/>
+          </div>
+          <div class="order__form-bottom">
+            <div class="order__form-bottom-wrapper">
+              <div class="order__form-text">
+                <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                <span class="order-range-value">75%</span>
+              </div>
+              <input
+              class="order__range"
+              type="range"
+              min="0"
+              max="100"
+              id="size"
+              value="75"
+            />
+            </div>
+            <div class="order__form-btn white-btn">
+            <input type="file" id="file-upload" style="display: none;" />
+            <label for="file-upload" class="custom-file-upload">Прикрепить файл</label>
+            </div>
+          </div>
+          <button type="submit" class="order__btn primary-btn">Отправить</button>
+        </form>
+        </div>
+    </div>
+  </div>
+</section>

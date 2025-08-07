@@ -1,0 +1,154 @@
+<div class="popup" data-target="popup-change">
+  <div class="popup__body">
+    <div class="popup__inner">
+      <div class="popup__content">
+        <picture class="close close-popup">
+          <source srcset="assets/img/icons/close.svg" type="image/svg+xml" />
+          <img src="assets/img/icons/close.png" alt="close_popup" />
+        </picture>
+        <div class="popup__content-wrap">
+          <p class="popup__title original-title">
+            <span>Оставьте</span> вашу заявку
+          </p>
+          <p class="popup__subtitle original-subtitle">
+            Наш специалист перезвонит вам в ближайшее время
+          </p>
+          <form class="form popup__form">
+            <div class="popup__form-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="popup__input"
+                placeholder="Имя"
+                required
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="popup__input"
+                placeholder="Номер телефона"
+                required
+              />
+              <button class="primary-btn popup__btn" type="submit">
+                Отправить
+              </button>
+              <p class="popup__policy">
+                Мы обеспечиваем полную
+                <a href="#" rel="nofollow">конфиденциальность</a> вашей личности
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-target="popup__question">
+  <div class="popup__body">
+    <div class="popup__inner">
+      <div class="popup__content popup__content-feedback">
+        <picture class="close close-popup">
+          <source srcset="assets/img/icons/close.svg" type="image/svg+xml" />
+          <img src="assets/img/icons/close.png" alt="close_popup" />
+        </picture>
+        <div class="popup__content-wrap">
+          <p class="popup__title"><span>Задайте</span> вопрос</p>
+          <p class="popup__subtitle original-subtitle">
+            Наш специалист перезвонит вам в ближайшее время
+          </p>
+          <form class="form popup__form">
+            <div class="popup__form-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="popup__input"
+                placeholder="Имя"
+                required
+                autocomplete="off"
+              />
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                class="popup__input"
+                placeholder="Номер телефона"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <textarea
+              name="question"
+              id="question"
+              type="text"
+              placeholder="Вопрос"
+              class="popup__textarea"
+              autocomplete="off"
+            ></textarea>
+            <div class="popup__form-wrap">
+              <button class="primary-btn popup__btn" type="submit">
+                Отправить
+              </button>
+              <p class="popup__policy">
+                Мы обеспечиваем полную
+                <a href="#" rel="nofollow">конфиденциальность</a> вашей личности
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-target="popup__success">
+  <div class="popup__body">
+    <div class="popup__content popup__content-response">
+      <picture class="close close-popup">
+        <source srcset="assets/img/icons/close.svg" type="image/svg+xml" />
+        <img src="assets/img/icons/close.png" alt="close_popup" />
+      </picture>
+      <div class="popup__response-wrap">
+        <picture>
+          <source
+            srcset="assets/img/icons/response/success.svg"
+            type="image/svg+xml"
+          />
+          <img src="assets/img/icons/response/success.png" alt />
+        </picture>
+        <p class="popup__title">Заявка успешно отправлена</p>
+        <button class="primary-btn" onclick="window.location.href='index.html'">
+          На главную
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup" data-target="popup__error">
+  <div class="popup__body">
+    <div class="popup__content popup__content-response">
+      <picture class="close close-popup">
+        <source srcset="assets/img/icons/close.svg" type="image/svg+xml" />
+        <img src="assets/img/icons/close.png" alt="close_popup" />
+      </picture>
+      <div class="popup__response-wrap">
+        <picture>
+          <source
+            srcset="assets/img/icons/response/error.svg"
+            type="image/svg+xml"
+          />
+          <img src="assets/img/icons/response/error.png" alt />
+        </picture>
+        <p class="popup__title">Упс! Возникла ошибка</p>
+        <p class="popup__subtitle">Повторите запрос позже</p>
+        <button class="primary-btn" onclick="window.location.href='index.html'">
+          На главную
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
