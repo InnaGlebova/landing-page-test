@@ -11,13 +11,13 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "Frontend Developer",
-  "homepage": "https://github.com/username/repo-name#readme",
+  "homepage": "https://innaglebova.github.io/landing-page-test/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/repo-name.git"
+    "url": "git+https://github.com/InnaGlebova/landing-page-test.git"
   },
   "bugs": {
-    "url": "https://github.com/username/repo-name/issues"
+    "url": "https://github.com/InnaGlebova/landing-page-test/issues"
   },
   "keywords": ["landing", "adaptive", "bem", "scss", "gulp"],
   "license": "ISC",

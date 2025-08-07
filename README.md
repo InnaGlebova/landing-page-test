@@ -1,14 +1,14 @@
 # Тестовое задание - Лендинг страница
 
-![GitHub Pages](https://github.com/your-username/your-repo-name/actions/workflows/deploy.yml/badge.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/your-repo-name)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/your-repo-name)
+![GitHub Pages](https://github.com/InnaGlebova/landing-page-test/actions/workflows/deploy.yml/badge.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/InnaGlebova/landing-page-test)
+![GitHub repo size](https://img.shields.io/github/repo-size/InnaGlebova/landing-page-test)
 
 Адаптивная лендинг страница, выполненная в соответствии с техническими требованиями.
 
 ## 🚀 Demo
 
-Проект развернут на GitHub Pages: [Посмотреть демо](https://your-username.github.io/your-repo-name/)
+Проект развернут на GitHub Pages: [Посмотреть демо](https://innaglebova.github.io/landing-page-test/)
 
 ## 📋 Требования
 
