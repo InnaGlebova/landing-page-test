@@ -118,11 +118,11 @@
       width: 100%;
       align-items: center;
       margin: 0 auto;
-    }
 
-    &>* {
-      flex-basis: calc((100% - 20px) / 2);
-      max-width: 100%;
+      &>* {
+        flex-basis: calc((100% - 20px) / 2);
+        max-width: 100%;
+      }
     }
   }
 
@@ -213,7 +213,7 @@
       text-align: center;
       margin: 0 auto;
       gap: 20px;
-    
+
       & picture {
         width: 100px;
         height: 100px;
